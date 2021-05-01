@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='welcome-design.css') }}" />
+    <title>Scrutiny</title>
+</head>
+<body>
+    <div class="burger-nav">
+        <img src="static/scrutiny-logo-white.png" class="burger-logo">
+        <div class="burger-content">
+            <div class="login-box">
+                <a href="{{ url_for('login') }}"><img src="static/Login-icon.png"  class="login-icon"></a>
+                <h1 class="login-text-nav">Log in</h1>
+            </div>
+            <a href="{{ url_for('survey') }}"><img src="static/Survey-icon.png"  class="nav-icon"></a>
+            <a href="{{ url_for('about') }}"><img src="static/About-icon.png"  class="nav-icon"></a>
+            <a href="{{ url_for('contact') }}"><img src="static/Contact-icon.png"  class="nav-icon nav-contact"></a>
+            <a href="{{ url_for('login') }}"><img src="static/Logout-icon.png"  class="nav-icon nav-contact nav-logout"></a>
+        </div>
+    </div>
+    <img src="static/burger.png"  class="burger-btn" id="image">
+    <a href="{{ url_for('welcome') }}">
+        <img src="static/scrutiny-LOGO.png"  class="logo-btn">
+    </a>
+    <nav>
+            <a href="{{ url_for('about') }}"><img src="static/About.png"  class="nav-btn"></a>
+            <a href="{{ url_for('contact') }}"><img src="static/Contact.png"  class="nav-btn"></a>
+            <a href="{{ url_for('survey') }}"><img src="static/Survey.png"  class="nav-btn"></a>
+            <a href="{{ url_for('login') }}"><img src="static/Login.png"  class="nav-btn"></a>
+    </nav>
+    <article class="large-text">
+        <h1> Transforming </h1>
+        <h1>Questionnaire into a Data</h1>
+        <div class="essay-box">
+            <p class="essay">Make a questionnaire which will help your</p>
+            <p class="essay">research paper to collect new and meaningful</p>
+            <p class="essay">information from real people.</p>
+        </div>
+    </article>
+    <a href="{{ url_for('signup') }}">
+        <img src="static/Sign-up.png"  class="sign-btn">
+    </a>
+    <a href="{{ url_for('signup') }}">
+        <img src="static/Signup-white.png"  class="sign-white">
+    </a>
+    <script src="static/nav-script.js"></script>
+</body>
+</html>

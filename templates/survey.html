@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .title{
+            position: relative;
+            top: 20px;
+            padding: 0.5vw;
+            margin: auto;
+            height: 4.5vw;
+            min-width:300px;
+          	min-height:40px;
+            width: 60%;
+        }
+        .welcome {
+            text-align: center;
+            margin:auto;
+            color: #ffffff;
+            font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+            font-size:calc(15px + 2vw);
+            text-shadow: 0.1vw 0.15vw #2f6f63;
+        }
+        .searchbox {
+            position:relative;
+            top: 50px;
+            height: 2.5vw;
+            min-width:300px;
+          	min-height:28px;
+            width: 60%;
+            margin:auto;
+        }
+        #word {
+            width: 99%;
+            margin:auto;
+            font-size:calc(14px + 0.75vw);
+            box-shadow: 0.1vw 0.15vw #2f6f63;
+        }
+        .poolbox {
+            min-width:300px;
+            min-height:200px;
+            overflow: auto;
+            overflow-x: hidden;
+            position: relative;
+            top:60px;
+            background-color: #FFFFFF;
+            margin: auto;;
+          	padding-left: 4px;
+            height: 27.7vw;
+            width: 60%;
+            box-shadow: 0.1vw 0.15vw #2f6f63;
+            color: #2c2f2e;
+          	vertical-align: top;
+          	line-height: 60%;
+        }
+        .surveypool {
+          	margin-top: 10px;
+            min-width:300px;
+            font-size:calc(14px + 0.75vw);
+            width:100%;
+            font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+            color: #2c2f2e;
+        }
+        .submitbox {
+            height: 25px;
+            min-width:125px;
+            top: 70px;
+            position:relative;
+            width: 7%;
+            margin: auto;
+            box-shadow: 0.1vw 0.15vw #2f6f63;
+        }
+        .submit {
+            height: 25px;
+            width: 100%;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>Home Page</title>
+</head>
+<body bgcolor=#449f8e>
+    <div class ="title">
+        <h1 class = "welcome">Answer/Submit a Survey</h1>
+    </div>
+
+    <div class="searchbox">
+       <form>
+            <input type="text" id="word" name="word" placeholder={{holder}}>
+       </form>
+    </div>
+
+    <div class="poolbox">
+        <p class ="surveypool">Survey number 1 </p>
+      <p class ="surveypool">Survey number 2 </p>
+    </div>
+    <div class="submitbox">
+        <button class="submit" type="button" name="submit">Submit a Survey</button>
+    </div>
+
+</body>
+</html>

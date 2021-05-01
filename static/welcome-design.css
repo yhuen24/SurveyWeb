@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+    .change-icon {
+        transition: 0.5s;
+        object-fit: scale-down;
+        content: url("arrow.png");
+    }
+    .login-text-nav{
+        position: relative;
+        top: 5.5vh;
+        left: 2vw;
+        font-family: mySemiBold;
+        font-size:calc(16px + 3vw);
+        color: white;
+    }
+    .login-box {
+        display: flex;
+        flex-direction: row;
+        width: 98%;
+    }
+    .nav-logout {
+        position: relative;
+        top: 40vh;
+    }
+    .burger-logo {
+       position: relative;
+       left: 30vw;
+       top: 1.5vh;
+       height: 20vw;
+       width: 45vw;
+       object-fit: cover;
+    }
+    .login-icon {
+        position: relative;
+        left: 3vw;
+        height:75px;
+        width: 75px;
+    }
+    .burger-content{
+       position: relative;
+       top: 2vh;
+    }
+    .nav-icon {
+        border-top: 1px solid white;
+        height:7.5vh;
+        width: 100%;
+    }
+    .nav-contact {
+        border-bottom: 1px solid white;
+    }
+    .burger-nav {
+        line-height:5px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: -1000px;
+        top: 0px;
+        height: 100%;
+        width: 80%;
+        background-color: rgba(2,91,150,255);
+        transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+    }
+    .change {
+        left: 0px;
+    }
+    body {
+        overflow-x: hidden;
+        background-image: url("Mobile-Background.png");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    .sign-white{
+        display: block;
+        margin-top: 35vh;
+        margin-left: auto;
+        margin-right: auto;
+        height: 15vw;
+        width: 60%;
+        object-fit: cover;
+    }
+    .burger-btn {
+        transition: 0.5s;
+        position:fixed;
+        top: 5vh;
+        left:6vw;
+        height: 6vw;
+        width: 9vw;
+        object-fit: cover;
+    }
+    .logo-btn {
+        position: fixed;
+        right: 20px;
+        top: 5px;
+        height: 3vh;
+        width: 6vw;
+        min-height: 86px;
+        min-width: 170px;
+        object-fit: cover;
+        font-size:calc(15px + 2vw);
+        transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+    }
+    .logo-gone {
+        right: -1000px;
+    }
+    nav {
+        display: none;
+    }
+    @font-face {
+        font-family: mySemiBold;
+        src: url(Montserrat-Bold.ttf);
+    }
+    .large-text {
+        margin-top: 20vh;
+        margin-left:6vw;
+        font-family: mySemiBold;
+        font-size:calc(14px + 1vw);
+        color: rgba(3,31,75,255);
+        padding-bottom: 20px;
+    }
+    @font-face {
+        font-family: myLight;
+        src: url(Montserrat-Regular.ttf);
+    }
+    .essay-box {
+        margin-top: 5vh;
+        padding-bottom: 1vw;
+    }
+    .essay {
+        line-height: 25px;
+        letter-spacing: -0.5px;
+        font-family: myLight;
+        font-size:calc(12px + 0.8vw);
+        color: rgba(3,31,75,255);
+    }
+    .sign-btn {
+        display:none;
+    }
+
+@media only screen and (min-width: 1000px){
+    .nav-icon {
+        display:none;
+    }
+    .nav-contact {
+        display:none;
+    }
+    .login-text-nav{
+        display:none;
+    }
+    .login-box {
+        display: none;
+    }
+    .nav-logout {
+        display: none;
+    }
+    .burger-logo {
+       display: none;
+    }
+    .login-icon {
+        display: none;
+    }
+    .burger-content{
+       display: none;
+    }
+    .burger-nav {
+        display: none;
+    }
+    .sign-white{
+        display:none;
+    }
+    .burger-btn {
+        display: none;
+    }
+    body {
+        background-image: url("background.png");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    .logo-btn {
+        float: left;
+        top: 5vh;
+        left: 2vw;
+        height: 10vh;
+        width: 15vw;
+        min-height: 60px;
+        min-width: 120px;
+        object-fit: cover;
+    }
+    nav {
+        display: inline;
+        float:right;
+    }
+    .nav-btn {
+        margin-top: 2vw;
+        object-fit: cover;
+        height: 4.5vw;
+        width: 9vw;
+        min-height: 30px;
+        min-width: 60px;
+    }
+    @font-face {
+    font-family: mySemiBold;
+    src: url(Montserrat-SemiBold.ttf);
+    }
+    .large-text {
+        display: block;
+        position: fixed;
+        top: 10vw;
+        margin-top: 2vw;
+        margin-left: 3vw;
+        font-family: mySemiBold;
+        font-size:calc(15px + 1.5vw);
+        color: rgba(3,31,75,255);
+        padding-bottom: 20px;
+    }
+    @font-face {
+        font-family: myLight;
+        src: url(Montserrat-Regular.ttf);
+    }
+    .essay {
+        line-height: 2.8vw;
+        letter-spacing: -0.063vw;
+        font-family: myLight;
+        font-size:calc(12px + 1.2vw);
+        color: rgba(3,31,75,255);
+    }
+    .essay-box {
+        display: block;
+        padding-top: 1vw;
+        position: fixed;
+        top: 20vw;
+        margin-top: 2vw;
+    }
+    .sign-btn {
+        display: block;
+        position: fixed;
+        top: 30vw;
+        left: 0.5vw;
+        margin-top: 3.5vw;
+        margin-left: 2vw;
+        height: 5vw;
+        width: 10vw;
+        min-height: 60px;
+        min-width: 120px;
+        object-fit: cover;
+    }
+}
+
