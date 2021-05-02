@@ -6,8 +6,52 @@
     <title>Sign in</title>
 </head>
 <body>
+<!--    for Mobile-->
     <a href="{{ url_for('welcome') }}">
-        <img src="static/arrow-blue.png"  class="arrow-btn">
+        <img src="static/arrow-blue.png" class="arrow-btn"/>
     </a>
+    <div class="text">
+        <h1 class="text-large">Create an account</h1>
+        <p class="text-small">Go ahead and find things</p>
+        <p class="text-small" id="indent">you've never searched before...</p>
+    </div>
+    <div class="signup-form">
+        <form action="{{ url_for("signup")}}" method="post">
+        <p class="form-label">Name</p>
+        <input type="text" id="name" name="name" placeholder="Ex:  Juan Dela Cruz" class="form-input">
+        <p class="form-label">Email</p>
+        <input type="email" id="email" name="email" placeholder="Ex:  juandc123@gmail.com" class="form-input">
+        <p class="form-label">Password</p>
+        <input type="password" id="password" name="password" placeholder="O O O O O O O O"
+               class="form-input" class="bullet-point">
+        <p class="form-label">Confirm Password</p>
+        <input type="password" id="confirm-pass" name="confirm-pass" placeholder="O O O O O O O O"
+               class="form-input" class="bullet-point">
+    </div>
+        <a href="{{ url_for('login') }}">
+            <img src="static/Signup-blue-btn.png" class="signup-btn"/>
+        </a>
+
+<!--        For Desktop-->
+    <div class="signup-box-pc">
+        <p class="text-pc">Create your account</p>
+        <div class="form-box-pc">
+            <form action="{{ url_for("signup")}}" method="post">
+            <p class="form-label-pc">Name</p>
+            <input type="text" id="name-pc" name="name" placeholder="Ex:  Juan Dela Cruz" class="form-input-pc">
+            <p class="form-label-pc">Email</p>
+            <input type="email" id="email-pc" name="email" placeholder="Ex:  juandc123@gmail.com" class="form-input-pc">
+            <p class="form-label-pc">Password</p>
+            <input type="password" id="password-pc" name="password" placeholder="O O O O O O O O"
+               class="form-input-pc" class="bullet-point-pc">
+            <p class="form-label-pc">Confirm Password</p>
+            <input type="password" id="confirm-pass-pc" name="confirm-pass" placeholder="O O O O O O O O"
+               class="form-input-pc" class="bullet-point-pc">
+        </div>
+        <a href="{{ url_for('login') }}">
+            <img src="static/Signup-blue-btn.png" class="signup-btn-pc"/>
+        </a>
+    </div>
+
 </body>
 </html>

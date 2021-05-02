@@ -9,7 +9,123 @@
         background-attachment: fixed;
     }
     .arrow-btn {
-
+        content: url("arrow-blue.png");
+        position: relative;
+        top: 4.5vh;
+        left: 5vw;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    @font-face {
+        font-family: mySemiBold;
+        src: url(Montserrat-Bold.ttf);
+    }
+    @font-face {
+        font-family: myLight;
+        src: url(Montserrat-Regular.ttf);
+    }
+    @font-face {
+        font-family: myMedium;
+        src: url(Montserrat-Medium.ttf);
+    }
+    @font-face {
+        font-family: myThin;
+        src: url(Montserrat-Light.ttf);
+    }
+    .text {
+        position: relative;
+        top: 8vh;
+        left: 5vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .text-large {
+        letter-spacing: -1px;
+        position: relative;
+        font-family: mySemiBold;
+        font-size:calc(15px + 1vw);
+        color: rgba(3,31,75,255);
+    }
+    .text-small {
+        letter-spacing: -1px;
+        position: relative;
+        top: 0.5vh;
+        font-family: myLight;
+        font-size:calc(10px + 0.8vw);
+        color: rgba(3,31,75,255);
+    }
+    #indent {
+       position: relative;
+       left: 5.5vw;
+       display: block;
+    }
+    .signup-form {
+        position: relative;
+        top: 27.7vh;
+        height: 30vh;
+        width: 82%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form-label {
+        letter-spacing: -1px;
+        padding-top: 2vh;
+        font-family: myMedium;
+        font-size:calc(12px + 1vw);
+        color: rgba(3,31,75,255);
+    }
+    ::placeholder {
+        letter-spacing: -0.75px;
+        color: rgba(180,205,223,255);
+        font-family: myThin;
+        font-size:calc(14px + 1vw);
+    }
+    .bullet-point{
+        letter-spacing: 20px;
+        color: rgba(180,205,223,255);
+        font-family: mySemiBold;
+        font-size:calc(17px + 4vw);
+    }
+    .form-input{
+        text-indent: 3vw;
+        border-width: 1px;
+        border-radius: 7px;
+        box-shadow: 0px 1.5px 0px #808080;
+        border-color: rgba(131,157,189,255);
+        height: 6vh;
+        width: 100%;
+        font-family: myMedium;
+        font-size:calc(12px + 1vw);
+    }
+    .signup-btn {
+        margin-top: 6vh;
+        content: url("Signup-blue-btn.png");
+        display: block;
+        position: relative;
+        top: 40vh;
+        height: 7vh;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+    }
+    .text-pc{
+        display: none;
+    }
+    .signup-box-pc {
+        display: none;
+    }
+    .form-box-pc {
+        display: none;
+    }
+    .form-label-pc {
+        display: none;
+    }
+    .form-input-pc{
+        display: none;
+    }
+    .signup-btn-pc {
+        display: none;
     }
 
 @media only screen and (min-width: 1000px){
@@ -17,5 +133,87 @@
         background-image: url("Signup-bg-desktop.png");
         background-size: 100% 100%;
         background-attachment: fixed;
+    }
+    ::placeholder {
+        letter-spacing: -1px;
+        color: rgba(180,205,223,255);
+        font-family: myThin;
+        font-size:calc(12px + 0.80vw);
+    }
+    .text-pc{
+        display: flex;
+        letter-spacing: -1px;
+        position: relative;
+        top: 3.5vh;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: mySemiBold;
+        font-size:calc(18px + 2.25vw);
+        color: rgba(3,31,75,255);
+    }
+    .signup-box-pc {
+        display: flex;
+        position: relative;
+        top: 5vh;
+        overflow-x: hidden;
+        height: 90vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        float:right;
+    }
+    .form-box-pc {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 8vh;
+        height: 80%;
+        width: 60%;
+    }
+    .form-label-pc {
+        display: flex;
+        letter-spacing: -3px;
+        padding-top: 2vh;
+        font-family: myLight;
+        font-size:calc(11px + 1vw);
+        color: rgba(3,31,75,255);
+    }
+    .form-input-pc{
+        display: flex;
+        text-indent: 0.5vw;
+        border-width: 1px;
+        border-radius: 7px;
+        box-shadow: 0px 2px 0px #808080;
+        border-color: rgba(131,157,189,255);
+        height: 6.5vh;
+        width: 100%;
+        font-family: myLight;
+        font-size:calc(12px + 1vw);
+    }
+    .signup-btn-pc {
+        content: url("Signup-blue-btn.png");
+        display: flex;
+        position: relative;
+        top: -7vh;
+        height: 9vh;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: fill;
+    }
+    .arrow-btn {
+        display: none;
+    }
+    .text {
+        display:none;
+    }
+    .signup-form {
+        display: none;
+    }
+
+    .signup-btn {
+        display: none;
     }
 }
