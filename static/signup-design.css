@@ -2,10 +2,19 @@
     margin: 0;
     padding: 0;
 }
+    body {
+        overflow-x: hidden;
+        background-image: url("Signup-bg-mobile.png");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    .arrow-btn {
+
+    }
 
 @media only screen and (min-width: 1000px){
     body {
-        background-image: url("background.png");
+        background-image: url("Signup-bg-desktop.png");
         background-size: 100% 100%;
         background-attachment: fixed;
     }
