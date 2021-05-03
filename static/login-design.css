@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+    body {
+        overflow-x: hidden;
+        background-image: url("Login-bg-mobile.png");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    @font-face {
+        font-family: mySemiBold;
+        src: url(Montserrat-Bold.ttf);
+    }
+    @font-face {
+        font-family: myLight;
+        src: url(Montserrat-Regular.ttf);
+    }
+    @font-face {
+        font-family: myMedium;
+        src: url(Montserrat-Medium.ttf);
+    }
+    @font-face {
+        font-family: myThin;
+        src: url(Montserrat-Light.ttf);
+    }
+    .arrow-btn {
+        content: url("arrow-blue.png");
+        display: flex;
+        position: relative;
+        top: 4.5vh;
+        left: 5vw;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .logo{
+        display: flex;
+        content: url("Scrutiny-LOGO.png");
+        position: relative;
+        top: 10vh;
+        height: 30vh;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form-box{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 30vh;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form-label{
+        letter-spacing: -1px;
+        padding-top: 2vh;
+        font-family: myMedium;
+        font-size:calc(12px + 1vw);
+        color: rgba(3,31,75,255);
+    }
+    .form-input{
+        text-indent: 3vw;
+        border-width: 1px;
+        border-radius: 7px;
+        box-shadow: 0px 1.5px 0px #808080;
+        border-color: rgba(131,157,189,255);
+        height: 6vh;
+        width: 100%;
+        font-family: myMedium;
+        font-size:calc(12px + 1vw);
+    }
+    .login-btn-mobile{
+        display: flex;
+        content: url("Login-btn-mobile.png");
+        position: relative;
+        height: 8vh;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .signup-box{
+        position: relative;
+        top: 5vh;
+        width: 70%;
+        margin: auto;
+    }
+    .signup-link{
+        vertical-align: middle;
+        text-align: center;
+        letter-spacing: -1px;
+        font-family: myMedium;
+        font-size:calc(12px + 1vw);
+        color: rgba(3,31,75,255);
+    }
+    .link-mobile{
+        color: rgba(3,31,75,255);
+        text-decoration: none;
+    }
+    .black-cover{
+        display: none;
+    }
+    .form-box-pc{
+        display: none;
+    }
+    .logo-pc{
+        display: none;
+    }
+    .login-box-pc {
+        display: none;
+    }
+    .form-input-pc{
+        display: none;
+    }
+    .form-label-pc{
+        display: none;
+    }
+    .login-btn-pc {
+        display: none;
+    }
+    .signup-box-pc{
+        display: none;
+    }
+    .signup-link-pc {
+        display: none;
+
+    }
+    .link-pc{
+        display:none;
+    }
+
+@media only screen and (min-width: 1000px){
+     body {
+        overflow: hidden;
+        background-image: url("home.jpg");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    .arrow-btn {
+        display: none;
+    }
+    .logo{
+        display:none;
+    }
+    .form-box{
+        display: none;
+    }
+    .form-label{
+        display: none;
+    }
+    .form-input{
+        display: none;
+    }
+    .login-btn-mobile{
+       display: none;
+    }
+    .signup-link{
+        display: none;
+    }
+    .black-cover {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        height: 200vh;
+        width: 100%;
+        background-color: rgb(96,96,96,0.5)
+
+    }
+    .form-box-pc{
+        border-radius: 20px;
+        flex-direction: column;
+        display: flex;
+        position:relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 15vh;
+        height: 70vh;
+        width: 40%;
+        background-color: white;
+        box-shadow: 1px 3px 10px #505050;
+    }
+    .logo-pc{
+        display: flex;
+        content: url("Scrutiny-LOGO.png");
+        position: relative;
+        top: 2vh;
+        height: 15vh;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+    }
+    .login-box-pc {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 3vh;
+        height:28vh;
+        width: 80%;
+    }
+    .form-input-pc{
+        display: flex;
+        text-indent: 0.75vw;
+        border-width: 1px;
+        border-radius: 7px;
+        box-shadow: 0px 3px 5px #808080;
+        border-color: rgba(131,157,189,255);
+        height: 7vh;
+        width: 100%;
+        font-family: myMedium;
+        font-size:calc(12px + 1vw);
+    }
+    .form-label-pc{
+        display: flex;
+        letter-spacing: -2px;
+        padding-top: 2vh;
+        font-family: myMedium;
+        font-size:calc(13px + 0.7vw);
+        color: rgba(3,31,75,255);
+    }
+    .login-btn-pc {
+        display: flex;
+        content: url("Login-btn-pc.png");
+        position: relative;
+        top: 6vh;
+        margin-left: auto;
+        margin-right: auto;
+        height: 8vh;
+        width: 40%;
+    }
+    .signup-box-pc{
+        display: flex;
+        position: relative;
+        top: 3vh;
+        width: 70%;
+        margin: auto;
+    }
+    .signup-link-pc {
+        display: flex;
+        margin: auto;
+        letter-spacing: -1px;
+        font-family: myMedium;
+        font-size:calc(12px + 0.5vw);
+        color: rgba(3,31,75,255);
+    }
+    .link-pc{
+        display:flex;
+        color: rgba(3,31,75,255);
+        text-decoration: none;
+    }
+
+}

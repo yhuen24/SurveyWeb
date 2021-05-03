@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login-design.css') }}" />
     <title>Log in</title>
 </head>
 <body>
-    <h1>This is the Log in page</h1>
+<!--    For mobile-->
+    <a href="{{ url_for('welcome') }}">
+        <img src="static/arrow-blue.png" class="arrow-btn"/>
+    </a>
+    <img src="static/Scrutiny-LOGO.png" class="logo"/>
+    <div class="form-box">
+        <form action="{{ url_for("login")}}" method="post">
+        <p class="form-label">Email</p>
+        <input type="email" id="email" name="email" class="form-input">
+        <p class="form-label">Password</p>
+        <input type="password" id="password" name="password" class="form-input">
+    </div>
+    <a href="{{ url_for('dashboard') }}">
+            <img src="static/Login-btn-mobile.png" class="login-btn-mobile"/>
+    </a>
+    <div  class="signup-box">
+        <p class="signup-link"><a href="{{ url_for('signup') }}" class="link-mobile">Not on Scrutiny yet? &nbsp;Sign up</a></p>
+    </div>
+<!--    For desktop-->
+    <div class="black-cover">
+        <div class="form-box-pc">
+            <img src="static/Scrutiny-LOGO.png" class="logo-pc"/>
+            <div class="login-box-pc">
+                <form action="{{ url_for("login")}}" method="post">
+                <p class="form-label-pc">Email</p>
+                <input type="email" id="email-pc" name="email" class="form-input-pc">
+                <p class="form-label-pc">Password</p>
+                <input type="password" id="password-pc" name="password" class="form-input-pc">
+            </div>
+            <a href="{{ url_for('dashboard') }}">
+                <img src="static/Login-btn-pc.png" class="login-btn-pc"/>
+            </a>
+            <div  class="signup-box-pc">
+                <p class="signup-link-pc"><a href="{{ url_for('signup') }}" class="link-pc">Not on Scrutiny yet? &nbsp;Sign up</a></p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
