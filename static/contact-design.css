@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+    @font-face {
+        font-family: mySemiBold;
+        src: url(Montserrat-Bold.ttf);
+    }
+    @font-face {
+        font-family: myLight;
+        src: url(Montserrat-Regular.ttf);
+    }
+    @font-face {
+        font-family: myMedium;
+        src: url(Montserrat-Medium.ttf);
+    }
+    @font-face {
+        font-family: myThin;
+        src: url(Montserrat-Light.ttf);
+    }
+    @font-face {
+        font-family: myBold;
+        src: url(Montserrat-Bold.ttf);
+    }
+    body {
+        overflow-x: hidden;
+        background-image: url("Contact-bg-mobile.png");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    .top-page {
+        display: flex;
+    }
+    .arrow-btn {
+        display: flex;
+        content: url("arrow-blue.png");
+        position: relative;
+        top: 4.5vh;
+        left: 5vw;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .logo {
+        display: flex;
+        content: url("Scrutiny-LOGO.png");
+        position: relative;
+        top: 3vh;
+        height: 7vh;
+        left: 40vw;
+        width: 50%;
+        object-fit: cover;
+    }
+    .top-text {
+        width: 60%;
+        display: flex;
+        position: relative;
+        left: -43vw;
+        letter-spacing: -.75px;
+        top: 10vh;
+        font-family: myBold;
+        font-size:calc(12px + 1vw);
+        color: rgba(3,31,75,255);
+    }
+    .form-box {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 30vh;
+        height: 50vh;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form-label{
+        letter-spacing: -1px;
+        padding-top: 2vh;
+        font-family: myMedium;
+        font-size:calc(12px + 1vw);
+        color: rgba(3,31,75,255);
+    }
+    .form-input{
+        text-indent: 3vw;
+        border-width: 1px;
+        border-radius: 7px;
+        box-shadow: 0px 1.5px 0px #808080;
+        border-color: rgba(131,157,189,255);
+        height: 6vh;
+        width: 100%;
+        font-family: myMedium;
+        font-size:calc(12px + 1vw);
+    }
+    .form-message {
+       box-sizing: border-box;
+       text-indent: 0;
+       padding-top: 3px;
+       padding-left: 8px;
+       padding-right: 5px;
+       height: 20vh;
+    }
+    .submit{
+        content: url("submit-btn.png");
+        position: relative;
+        top: 2vh;
+        display: flex;
+        height: 6vh;
+        width: 50%;
+        object-fit: fill;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top-page-pc {
+        display: none;
+    }
+    .welcome-btn {
+        display: none;
+    }
+    .nav-btn {
+        display: none;
+    }
+    .top-text-pc {
+        display: none;
+    }
+
+/* for desktop */
+@media only screen and (min-width: 1000px){
+     body {
+        overflow: hidden;
+        background-image: url("Contact-bg-pc.png");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    .top-page {
+        display: none;
+    }
+    .arrow-btn {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .top-text {
+        display: none;
+
+    }
+    .form-box {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 10vh;
+        height: 50vh;
+        width: 25%;
+        float: right;
+        margin-right: 10vw;
+    }
+    .form-label{
+        letter-spacing: -1px;
+        padding-top: 2vh;
+        font-family: myMedium;
+        font-size:calc(11px + 0.6vw);
+        color: rgba(3,31,75,255);
+    }
+    .form-input{
+        text-indent: 3vw;
+        border-width: 1px;
+        border-radius: 7px;
+        box-shadow: 0px 1.5px 0px #808080;
+        border-color: rgba(131,157,189,255);
+        height: 6vh;
+        width: 100%;
+        font-family: myMedium;
+        font-size:calc(11px + 0.6vw);
+    }
+    .form-message {
+       box-sizing: border-box;
+       text-indent: 0;
+       padding-top: 3px;
+       padding-left: 8px;
+       padding-right: 5px;
+       height: 20vh;
+    }
+    .submit{
+        content: url("submit-btn.png");
+        position: relative;
+        top: 2vh;
+        display: flex;
+        height: 6vh;
+        width: 50%;
+        object-fit: fill;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top-page-pc {
+        display: flex;
+    }
+    .welcome-btn {
+        display: flex;
+        position: relative;
+        top: 1.5vh;
+        height: 15vh;
+        left: 1.5vw;
+        width: 30%;
+        object-fit: cover;
+    }
+    nav {
+        display: inline;
+        float:right;
+    }
+    .nav-btn {
+        display: inline;
+        margin-top: 2vw;
+        object-fit: cover;
+        height: 4.5vw;
+        width: 9vw;
+        min-height: 30px;
+        min-width: 60px;
+    }
+    .top-text-pc {
+        display: flex;
+        display: flex;
+        position: relative;
+        letter-spacing: -1px;
+        margin: auto;
+        font-family: mySemiBold;
+        font-size:calc(13px + 1vw);
+        color: rgba(3,31,75,255);
+        padding-bottom: 2.5vh;
+    }
+
+
+}

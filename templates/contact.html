@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact-design.css') }}" />
     <title>Contact</title>
 </head>
 <body>
-    <h1>This is the contact page</h1>
+<!--        For desktop-->
+    <div class="top-page-pc">
+        <a href="{{ url_for('welcome') }}">
+            <img src="/static/Scrutiny-LOGO.png" class="welcome-btn"/>
+        </a>
+        <nav>
+            <a href="{{ url_for('about') }}"><img src="/static/About.png"  class="nav-btn"></a>
+            <a href="{{ url_for('contact') }}"><img src="/static/Contact.png"  class="nav-btn"></a>
+            <a href="{{ url_for('survey') }}"><img src="/static/Survey.png"  class="nav-btn"></a>
+            <a href="{{ url_for('login') }}"><img src="/static/Login.png"  class="nav-btn"></a>
+    </nav>
+    </div>
+    <div class="top-page">
+        <a href="{{ url_for('welcome') }}">
+            <img src="/static/arrow-blue.png" class="arrow-btn"/>
+        </a>
+        <img src="/static/Scrutiny-LOGO.png" class="logo"/>
+        <p class="top-text">Send us a message!</p>
+    </div>
+    <div class="form-box">
+        <p class="top-text-pc">Send us a message!</p>
+        <form action="{{ url_for("contact")}}" method="post" id="form">
+        <p class="form-label">Name</p>
+        <input type="text" id="name" name="name" class="form-input">
+        <p class="form-label">Email</p>
+        <input type="email" id="password" name="email" class="form-input">
+        <p class="form-label">Message</p>
+        <textarea rows="4" cols="40" name="comment" form="form" class="form-input form-message"></textarea>
+        <input type="image" class="submit" alt="Submit"
+       src="/static/submit-btn.png">
+    </div>
 </body>
 </html>
