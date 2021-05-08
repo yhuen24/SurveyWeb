@@ -35,13 +35,12 @@
     }
     .logo{
         display: flex;
-        content: url("Scrutiny-LOGO.png");
         position: relative;
-        top: 10vh;
-        height: 30vh;
+        height: 10vh;
         width: 50%;
         margin-left: auto;
         margin-right: auto;
+        object-fit: cover;
     }
     .form-box{
         display: flex;
@@ -98,35 +97,74 @@
         text-decoration: none;
     }
     .black-cover{
-        display: none;
+        position: relative;
+        top: 20vh;
+        display:flex;
+        flex-direction: column;
     }
     .form-box-pc{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        position:relative;
+        margin-left: auto;
+        margin-right: auto;
+        height: 50vh;
+        width: 80%;
     }
     .logo-pc{
         display: none;
     }
     .login-box-pc {
-        display: none;
+        display: block;
     }
     .form-input-pc{
-        display: none;
+        display: flex;
+        text-indent: 3vw;
+        border-width: 1px;
+        border-radius: 7px;
+        box-shadow: 0px 1.5px 0px #808080;
+        border-color: rgba(131,157,189,255);
+        height: 6vh;
+        width: 100%;
+        font-family: myMedium;
+        font-size:calc(12px + 1vw);
     }
     .form-label-pc{
-        display: none;
+        display: flex;
+        letter-spacing: -1px;
+        padding-top: 2vh;
+        font-family: myMedium;
+        font-size:calc(12px + 1vw);
+        color: rgba(3,31,75,255);
     }
     .login-btn-pc {
-        display: none;
+        display: flex;
+        position: relative;
+        top: 6vh;
+        margin-left: auto;
+        margin-right: auto;
+        height: 8vh;
+        width: 65%;
     }
     .signup-box-pc{
-        display: none;
+        display: flex;
+        position: relative;
+        top: 3vh;
+        width: 70%;
+        margin: auto;
     }
     .signup-link-pc {
-        display: none;
-
+        display: flex;
+        margin: auto;
+        letter-spacing: -1px;
+        font-family: myMedium;
+        font-size:calc(12px + 0.5vw);
+        color: rgba(3,31,75,255);
     }
     .link-pc{
-        display:none;
+        display:flex;
+        color: rgba(3,31,75,255);
+        text-decoration: none;
     }
 
 /* for desktop */
@@ -160,13 +198,13 @@
     }
     .black-cover {
         position: relative;
+        top: 0vh;
         margin-left: auto;
         margin-right: auto;
         display: flex;
         height: 200vh;
         width: 100%;
         background-color: rgb(96,96,96,0.5)
-
     }
     .form-box-pc{
         border-radius: 20px;
@@ -224,7 +262,6 @@
     }
     .login-btn-pc {
         display: flex;
-        content: url("Login-btn-pc.png");
         position: relative;
         top: 6vh;
         margin-left: auto;

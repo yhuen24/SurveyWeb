@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, flash, redirect, url_for
 from forms import RegistrationForm, LoginForm
 
 app=Flask(__name__)
@@ -30,12 +30,15 @@ def about():
 @app.route('/login/')
 def login():
     form = LoginForm()
-    return render_template("login.html", form=form)
+    return render_template("login-flask.html", form=form)
 
 
-@app.route('/signup/')
+@app.route('/signup/', methods=['GET', 'POST'])
 def signup():
     form = RegistrationForm()
+    if form.validate_on_submit():
+        flash(f'Account created for {form.username.data}!')
+        return redirect(url_for('login'))
     return render_template("register.html", form=form)
 
 
