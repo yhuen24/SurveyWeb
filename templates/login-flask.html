@@ -6,6 +6,7 @@
     <title>Login</title>
 </head>
 <body>
+{% block content %}
     <a href="{{ url_for('welcome') }}">
         <img src="/static/arrow-blue.png" class="arrow-btn"/>
     </a>
@@ -15,18 +16,18 @@
             <img src="/static/Scrutiny-LOGO.png" class="logo-pc"/>
             <div class="login-box-pc">
                 <form action="{{ url_for("login")}}" method="post">
-                <p class="form-label-pc">Email</p>
-                <input type="email" id="email-pc" name="email" class="form-input-pc">
-                <p class="form-label-pc">Password</p>
-                <input type="password" id="password-pc" name="password" class="form-input-pc">
+                {{ form.hidden_tag() }}
+                {{ form.email.label(class="form-label-pc") }}
+                {{ form.email(class="form-input-pc") }}
+                {{ form.password.label(class="form-label-pc") }}
+                {{ form.password(class="form-input-pc") }}
             </div>
-            <a href="{{ url_for('dashboard') }}">
-                <img src="/static/Login-btn-pc.png" class="login-btn-pc"/>
-            </a>
+            {{ form.submit(class="signup-btn-pc") }}
             <div  class="signup-box-pc">
                 <p class="signup-link-pc"><a href="{{ url_for('signup') }}" class="link-pc">Not on Scrutiny yet? &nbsp;Sign up</a></p>
             </div>
         </div>
     </div>
+{% endblock content %}
 </body>
 </html>

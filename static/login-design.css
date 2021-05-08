@@ -166,6 +166,23 @@
         color: rgba(3,31,75,255);
         text-decoration: none;
     }
+    .signup-btn-pc {
+        background-color: rgba(3,31,75,255);
+        color: white;
+        border-radius: 20px;
+        font-family: mySemiBold;
+        font-size:calc(18px + 1vw);
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        top: 4vh;
+        height: 8vh;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        border: none;
+    }
 
 /* for desktop */
 @media only screen and (min-width: 1000px){
@@ -289,5 +306,21 @@
         color: rgba(3,31,75,255);
         text-decoration: none;
     }
-
+    .signup-btn-pc {
+        background-color: rgba(3,31,75,255);
+        color: white;
+        border-radius: 30px;
+        font-family: mySemiBold;
+        font-size:calc(18px + 1vw);
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        top: 4vh;
+        height: 8vh;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        border: none;
+    }
 }

@@ -27,9 +27,14 @@ def about():
     return render_template("about.html")
 
 
-@app.route('/login/')
+@app.route('/login/', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
+    if form.validate_on_submit():
+        if form.email.data == 'admin@blog.com' and form.password.data == 'meliodas123':
+            return redirect(url_for('welcome'))
+        else:
+            return redirect(url_for('signup'))
     return render_template("login-flask.html", form=form)
 
 
@@ -37,7 +42,6 @@ def login():
 def signup():
     form = RegistrationForm()
     if form.validate_on_submit():
-        flash(f'Account created for {form.username.data}!')
         return redirect(url_for('login'))
     return render_template("register.html", form=form)
 
