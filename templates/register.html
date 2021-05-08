@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='signup-design.css') }}" />
+    <title>Sign up</title>
+</head>
+<body>
+{% block content %}
+    <a href="{{ url_for('welcome') }}">
+        <img src="/static/arrow-blue.png" class="arrow-btn"/>
+    </a>
+    <div class="text">
+            <h1 class="text-large">Create an account</h1>
+            <p class="text-small">Go ahead and find things</p>
+            <p class="text-small" id="indent">you've never searched before...</p>
+        </div>
+    <div class="signup-box-pc">
+        <p class="text-pc">Create your account</p>
+        <div class="form-box-pc">
+            <form action="{{ url_for("signup")}}" method="post">
+                {{ form.hidden_tag() }}
+
+            {{ form.username.label(class="form-label-pc") }}
+            {{ form.username(class="form-input-pc") }}
+
+            {{ form.email.label(class="form-label-pc") }}
+            {{ form.email(class="form-input-pc") }}
+
+            {{ form.password.label(class="form-label-pc") }}
+            {{ form.password(class="form-input-pc") }}
+
+            {{ form.confirm_password.label(class="form-label-pc") }}
+            {{ form.confirm_password(class="form-input-pc") }}
+        </div>
+            {{ form.submit(class="signup-btn-pc") }}
+    </div>
+{% endblock content %}
+</body>
+</html>
